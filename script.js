@@ -6,7 +6,7 @@ function volume_sphere(event) {
 	let radius = parseInt(r.value);
 	if(radius > 0){
 		let volume = (4/3) * (Math.PI * radius**3);
-		v.value = volume;
+		v.value = volume.toFixed(4);
 	}
 	else{
 		v.value  = NaN;
